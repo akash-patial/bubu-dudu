@@ -8,6 +8,40 @@ for (let i = 0; i < 15; i++) {
     document.body.appendChild(heart);
 }
 
+const images = ["bubu1.webp", "bubu2.webp", "bubu3.webp"];
+
+images.forEach((src, index) => {
+    let img = document.createElement("img");
+    img.src = src;
+    img.className = "bubu";
+
+    // Fixed starting positions
+    if (index === 0) {
+        img.style.top = "10%";
+        img.style.left = "5%";
+    } else if (index === 1) {
+        img.style.top = "70%";
+        img.style.left = "10%";
+    } else {
+        img.style.top = "20%";
+        img.style.right = "5%";
+    }
+
+    document.body.appendChild(img);
+
+    moveSmooth(img);
+});
+
+// Smooth floating movement
+function moveSmooth(el) {
+    setInterval(() => {
+        let x = (Math.random() * 40) - 20; // small movement
+        let y = (Math.random() * 40) - 20;
+
+        el.style.transform = `translate(${x}px, ${y}px)`;
+    }, 2000);
+}
+
 // Forgive button
 function forgive() {
     document.body.innerHTML = `
