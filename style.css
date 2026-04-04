@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+/* Main Card */
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #ff4d6d;
+}
+
+.character {
+  width: 120px;
+  margin: 10px 0;
+}
+
+/* Text */
+#text {
+  min-height: 120px;
+  font-size: 18px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+#no {
+  background: #ccc;
+  position: absolute;
+}
+
+/* Floating Hearts */
+.hearts span {
+  position: absolute;
+  color: red;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
