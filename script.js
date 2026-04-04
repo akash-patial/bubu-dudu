@@ -7,7 +7,7 @@ for (let i = 0; i < 15; i++) {
     heart.style.animationDuration = (3 + Math.random() * 3) + "s";
     document.body.appendChild(heart);
 }
-'
+
 const images = ["bubu1.jpeg", "bubu2.jpeg", "bubu3.jpeg","bubu4.jpeg"];
 
 images.forEach((src, index) => {
