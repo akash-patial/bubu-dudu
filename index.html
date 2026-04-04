@@ -12,6 +12,9 @@
 <body>
 
 <div class="card">
+
+    <img src="bubu.gif" class="gif" alt="bubu-dudu">
+
     <h2>I'm Really Sorry 🥺</h2>
 
     <p>You mean everything to me 💕</p>
@@ -22,7 +25,15 @@
         <button class="yes" onclick="forgive()">Forgive Me 💖</button>
         <button class="no" onmouseover="moveBtn(this)">No 😤</button>
     </div>
+
+    <button class="music-btn" onclick="toggleMusic()">🎵 Play Music</button>
+
 </div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 
 <script src="script.js"></script>
 </body>
