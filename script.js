@@ -23,3 +23,16 @@ function moveBtn(btn) {
     btn.style.top = Math.random() * window.innerHeight + "px";
     btn.style.left = Math.random() * window.innerWidth + "px";
 }
+
+let music = document.getElementById("bgMusic");
+let isPlaying = false;
+
+function toggleMusic() {
+    if (!isPlaying) {
+        music.play();
+        isPlaying = true;
+    } else {
+        music.pause();
+        isPlaying = false;
+    }
+}
