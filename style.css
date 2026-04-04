@@ -115,3 +115,17 @@ button {
 .music-btn:hover {
     transform: scale(1.05);
 }
+
+.bubu {
+    position: absolute;
+    width: 90px;
+    transition: transform 2s ease-in-out;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+/* Keep card above images */
+.card {
+    position: relative;
+    z-index: 10;
+}
