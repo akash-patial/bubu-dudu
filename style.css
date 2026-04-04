@@ -91,3 +91,27 @@ button {
         transform: translateY(-10vh) scale(1.2);
     }
 }
+/* GIF styling */
+.gif {
+    width: 120px;
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Music button */
+.music-btn {
+    margin-top: 15px;
+    background: #ff85a2;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+.music-btn:hover {
+    transform: scale(1.05);
+}
