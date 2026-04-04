@@ -8,7 +8,7 @@ for (let i = 0; i < 15; i++) {
     document.body.appendChild(heart);
 }
 
-const images = ["bubu1.webp", "bubu2.webp", "bubu3.webp"];
+const images = ["bubu1.jpeg", "bubu2.jpeg", "bubu3.jpeg","bubu4.jpeg];
 
 images.forEach((src, index) => {
     let img = document.createElement("img");
